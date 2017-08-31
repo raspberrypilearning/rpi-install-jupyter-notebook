@@ -9,12 +9,16 @@ The Jupyter Notebook is an open-source web application that allows you to create
     sudo pip3 install jupyter
     ```
 
+
 - This may take a while, especially on an older Pi or a Pi Zero as lots of other required libraries will be installed too.  Then generate a default configuration file:
+
     ```bash
     jupyter notebook --generate-config
     ```
 
+
 - Then set a password:
+
     ```bash
     jupyter notebook password
     ```
@@ -23,11 +27,13 @@ The Jupyter Notebook is an open-source web application that allows you to create
 ### Network Configuration
 
 - If you're just going to use Jupyter locally on the Pi, then you skip the next next step Now you need to set the IP address that Jupyter will serve pages on. Open the configuration file using your favourite editor (e.g. nano):
+
     ```bash
     nano .jupyter/jupyter_notebook_config.py
     ```
 
 - Find the line:
+
     ```
     c.NotebookApp.ip = "localhost"
     ```
