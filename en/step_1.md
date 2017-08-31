@@ -10,7 +10,9 @@ The Jupyter Notebook is an open-source web application that allows you to create
     ```
 
 
-- This may take a while, especially on an older Pi or a Pi Zero as lots of other required libraries will be installed too.  Then generate a default configuration file:
+This may take a while, especially on an older Pi or a Pi Zero as lots of other required libraries will be installed too.  
+
+- Then generate a default configuration file:
 
     ```bash
     jupyter notebook --generate-config
@@ -38,7 +40,7 @@ The Jupyter Notebook is an open-source web application that allows you to create
     c.NotebookApp.ip = "localhost"
     ```
 
-Remove the comment symbol at the start and change it to:
+- Remove the comment symbol at the start and change it to:
 
 ```
 c.NotebookApp.ip = "<ip address>"
@@ -49,16 +51,18 @@ where _<ip address>_ is the IP address of the Pi. For example:
 ```
 c.NotebookApp.ip = "192.168.1.200"
 ```
-Save the file and exit.
+
+- Save the file and exit.
 
 ### Testing
-Now test your installation by running:
+
+- Now test your installation by running:
 
 ```bash
 jupyter Notebook
 ```
 
-Then open a browser either on the Pi (for local only configurations) or on a machine on the same network (remote).  Type the appropriate address into the URL bar:
+- Then open a browser either on the Pi (for local only configurations) or on a machine on the same network (remote).  Type the appropriate address into the URL bar:
 
 http://localhost:888: (local)
 http://<ipaddress>:8888 (remote)
@@ -67,10 +71,10 @@ You should see a page like the one below.
 
 ![login](images/image1.png)
 
-Enter the password you set earlier. Now you should a directory listing of `/home/pi`.
+- Enter the password you set earlier. Now you should a directory listing of `/home/pi`.
 
 ![directory](images/image2.png)
 
-Click on the `New` button to the right of the screen. This will oppen a new Notebook session.
+- Click on the `New` button to the right of the screen. This will open a new Notebook session.
 
 ![session](images/image3.png)
