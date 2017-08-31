@@ -1,7 +1,7 @@
 
 The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.  It is a great tool for editing Python code, especially if you are working with charts and plotting data and need to make small, on-the-fly edits to your code. Because it is web based, it is also useful if your Pi is running headless and you want to test and edit code without having the Pi connected to a monitor and keyboard (e.g. if you're building a robot).
 
-***Installing***
+### Installing
 
 Install Jupyter Notebook with pip:
 
@@ -17,7 +17,7 @@ Then set a password:
 jupyter notebook password
 ```
 
-***Network Configuration***
+### Network Configuration
 If you're just going to use Jupyter locally on the Pi, then you skip the next next step Now you need to set the IP address that Jupyter will serve pages on. Open the configuration file using your favourite
 editor (e.g. nano):
 ```bash
@@ -39,7 +39,7 @@ c.NotebookApp.ip = "192.168.1.200"
 ```
 Save the file and exit.
 
-***Testing***
+### Testing
 Now test your installation by running:
 
 ```bash
@@ -50,4 +50,4 @@ Then open a browser either on the Pi (for local only configurations) or on a mac
 http://localhost:888: (local)
 http://<ipaddress>:8888 (remote)
 
-[](images/image1.png)
+![login](images/image1.png)
