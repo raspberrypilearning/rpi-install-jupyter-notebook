@@ -12,6 +12,4 @@ interests: " physical computing, robots "
 technologies: "physical computing, python"
 site_areas:
 steps:
-  - title: Introduction
-  - title: What you will need
-  - title: Installing Jupyter Notebook
+  - title: Installing
