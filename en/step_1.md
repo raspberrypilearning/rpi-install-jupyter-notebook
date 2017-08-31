@@ -38,19 +38,19 @@ This may take a while, especially on an older Pi or a Pi Zero as lots of other r
 
 ```
 #c.NotebookApp.ip = "localhost"
-```
+```\s\s
 
 - Remove the comment symbol at the start and change it to:
 
 ```
 c.NotebookApp.ip = "ip address"
-```
+```  
 
 where _ip address_ is the IP address of the Pi. For example:
 
 ```
 c.NotebookApp.ip = "192.168.1.200"
-```
+```  
 
 - Save the file and exit.
 
@@ -65,7 +65,7 @@ jupyter Notebook
 - Then open a browser either on the Pi (for local only configurations) or on a machine on the same network (remote).  Type the appropriate address into the URL bar:
 
 http://localhost:888: (local)
-http://<ipaddress>:8888 (remote)
+http://ipaddress:8888 (remote)
 
 You should see a page like the one below.
 
