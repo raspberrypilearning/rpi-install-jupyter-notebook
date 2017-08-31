@@ -38,20 +38,17 @@ This may take a while, especially on an older Pi or a Pi Zero as lots of other r
 
 ```
 #c.NotebookApp.ip = "localhost"
-```\s\s
-
+```  
 - Remove the comment symbol at the start and change it to:
 
 ```
 c.NotebookApp.ip = "ip address"
 ```  
-
 where _ip address_ is the IP address of the Pi. For example:
 
 ```
 c.NotebookApp.ip = "192.168.1.200"
 ```  
-
 - Save the file and exit.
 
 ### Testing
