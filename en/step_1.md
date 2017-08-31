@@ -8,6 +8,7 @@ Install Jupyter Notebook with pip:
 ```bash
 sudo pip3 install jupyter
 ```
+
 This make take a while, especially on an older Pi or a Pi Zero as lots of other required libraries will be installed too.  Then generate a default configuration file:
 ```bash
 jupyter notebook --generate-config
@@ -17,9 +18,10 @@ Then set a password:
 jupyter notebook password
 ```
 
+
 ### Network Configuration
-If you're just going to use Jupyter locally on the Pi, then you skip the next next step Now you need to set the IP address that Jupyter will serve pages on. Open the configuration file using your favourite
-editor (e.g. nano):
+
+If you're just going to use Jupyter locally on the Pi, then you skip the next next step Now you need to set the IP address that Jupyter will serve pages on. Open the configuration file using your favourite editor (e.g. nano):
 ```bash
 nano .jupyter/jupyter_notebook_config.py
 ```
@@ -27,11 +29,13 @@ Find the line:
 ```
 c.NotebookApp.ip = "localhost"
 ```
+
 remove the comment symbol at the start and change it to:
 
 ```
 c.NotebookApp.ip = "<ip address>"
 ```
+
 where _<ip address>_ is the IP address of the Pi. For example:
 
 ```
@@ -45,9 +49,20 @@ Now test your installation by running:
 ```bash
 jupyter Notebook
 ```
+
 Then open a browser either on the Pi (for local only configurations) or on a machine on the same network (remote).  Type the appropriate address into the URL bar:
 
 http://localhost:888: (local)
 http://<ipaddress>:8888 (remote)
 
+You should see a page like the one below.
+
 ![login](images/image1.png)
+
+Enter the password you set earlier. Now you should a directory listing of `/home/pi`.
+
+![directory](images/image2.png)
+
+Click on the `New` button to the right of the screen. This will oppen a new Notebook session.
+
+![session](images/image3.png)
