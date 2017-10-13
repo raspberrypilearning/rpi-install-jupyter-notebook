@@ -1,6 +1,6 @@
 title: Installing Jupyter Notebook on a Raspberry Pi
 hero_image: images/banner.png
-description: installing-jupyter-notebook-on-a-raspberry-pi description
+description: How to install Jupyter Notebook on your Pi
 original_url: https://codeclubprojects.org/en-GB/scratch/rock-band
 theme: red # possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 1 # possible values: 1, 2 or 3
@@ -12,4 +12,4 @@ interests: " physical computing, robots "
 technologies: "physical computing, python"
 site_areas:
 steps:
-  - title: Installing
+  - title: Installing Jupyter Notebook
