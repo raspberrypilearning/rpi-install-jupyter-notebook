@@ -1,5 +1,5 @@
 
-The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.  It is a great tool for editing Python code, especially if you are working with charts and plotting data and need to make small, on-the-fly edits to your code. Because it is web based, it is also useful if your Pi is running headless and you want to test and edit code without having the Pi connected to a monitor and keyboard (e.g. if you're building a robot).
+The Jupyter Notebook is an open-source web application you can use to create and share documents that contain live code, equations, visualizations, and explanatory text. It is a great tool for editing Python code, especially if you are working with charts and plotting data and need to make small edits to your code on the fly. Because it is an online tool, it is also useful if you want to test and edit code without having your Pi connected to a monitor and keyboard, e.g. when you're building a robot.
 
 ### Installing
 
@@ -10,7 +10,7 @@ The Jupyter Notebook is an open-source web application that allows you to create
     ```
 
 
-This may take a while, especially on an older Pi or a Pi Zero as lots of other required libraries will be installed too.  
+This may take a while, especially on an older Pi or a Pi Zero, as lots of other required libraries will be installed too.  
 
 - Then generate a default configuration file:
 
@@ -19,34 +19,30 @@ This may take a while, especially on an older Pi or a Pi Zero as lots of other r
     ```
 
 
-- Then set a password:
+- Next, set a password:
 
     ```bash
     jupyter notebook password
     ```
 
 
-### Network Configuration
+### Network configuration
 
-- If you're just going to use Jupyter locally on the Pi, then you skip the next next step Now you need to set the IP address that Jupyter will serve pages on. Open the configuration file using your favourite editor (e.g. nano):
+**Note:** If you're just going to use Jupyter locally on the Pi, then skip this step.
+
+- Now you need to set the IP address on which Jupyter will serve pages. Open the configuration file using your favourite editor (e.g. nano):
 
     ```bash
     nano .jupyter/jupyter_notebook_config.py
     ```
 
-- Find the line:
+- Find this line:
 
 ```
 #c.NotebookApp.ip = "localhost"
 ```  
 
-- Remove the comment symbol at the start and change it to:
-
-```
-c.NotebookApp.ip = "ip address"
-```  
-
-where _ip address_ is the IP address of the Pi. For example:
+- Remove the comment symbol `#` at the start, and replace the `localhost` bit between the `""` symbols with the IP address of the Pi. For example:
 
 ```
 c.NotebookApp.ip = "192.168.1.200"
@@ -56,13 +52,13 @@ c.NotebookApp.ip = "192.168.1.200"
 
 ### Testing
 
-- Now test your installation by running:
+- Now test your installation by typing the following into a terminal window:
 
 ```bash
 jupyter Notebook
 ```
 
-- Then open a browser either on the Pi (for local only configurations) or on a machine on the same network (remote).  Type the appropriate address into the URL bar:
+- Then open a browser, either on the Pi for local uses, or on a machine on the same network if you want to access the Pi remotely. Type the appropriate address into the URL bar:
 
 http://localhost:888: (local)
 http://ipaddress:8888 (remote)
@@ -75,6 +71,6 @@ You should see a page like the one below.
 
 ![directory](images/image2.png)
 
-- Click on the `New` button to the right of the screen. This will open a new Notebook session.
+- Click the **New** button on the right of the screen. This will open a new Notebook session.
 
 ![session](images/image3.png)
