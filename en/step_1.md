@@ -58,12 +58,17 @@ c.NotebookApp.ip = "192.168.1.200"
 jupyter Notebook
 ```
 
-- Then open a browser, either on the Pi for local uses, or on a machine on the same network if you want to access the Pi remotely. Type the appropriate address into the URL bar:
+- Then open a browser and type the appropriate address into the URL bar.  If you're using a Pi and just running Jupyter Notebook locally then use:
 
-http://localhost:888: (local)
-http://ipaddress:8888 (remote)
+http://localhost:888
 
-You should see a page like the one below.
+If you're on a machine on the same network as the Pi running Jupyter Notebook and you want to access it remotely:
+
+http://*ipaddress*:8888
+
+Replace *ipaddress* with that Pi's IP address).
+
+- You should see a page like the one below.
 
 ![login](images/image1.png)
 
