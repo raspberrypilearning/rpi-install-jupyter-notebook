@@ -66,7 +66,7 @@ If you're on a machine on the same network as the Pi running Jupyter Notebook an
 
 http://*ipaddress*:8888
 
-Replace *ipaddress* with that Pi's IP address).
+(replace *ipaddress* with that Pi's IP address).
 
 - You should see a page like the one below.
 
